@@ -15,7 +15,7 @@ export default function Carousel() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 10000); // 1000ms = 1 seconds
+    }, 10000); // 1,000ms = 1 seconds
 
     // Clean up the interval when the component unmounts
     return () => clearInterval(interval);
@@ -26,10 +26,9 @@ export default function Carousel() {
       className="relative bg-cover bg-center h-[75vh] flex items-end justify-center transition-all duration-2000"
       style={{ backgroundImage: `url(${images[currentImageIndex]})` }} // Set background image
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-40"></div>
+      
+      <div className="absolute inset-0 bg-black opacity-20"></div>
 
-      {/* Content */}
       <div className="relative z-10 text-center text-white">
         <h1 className="text-5xl font-bold mb-10">
           El momento que realmente importa
@@ -42,7 +41,9 @@ export default function Carousel() {
             Ir a la tienda
           </button>
         </div>
+
       </div>
     </section>
+    
   );
 }

@@ -1,4 +1,3 @@
-// pages/index.tsx
 import Header from './header';
 import Carousel from './carousel';
 
@@ -8,7 +7,8 @@ export default function Home() {
       <Header />
       <Carousel />
 
-      <section className="py-20 bg-white text-center">
+      <section className="flex gap-x-10 justify-center py-20 bg-white text-center">
+        <section className='flex flex-col'>
         <h2 className="text-4xl font-bold mb-6">DECOR EVENTOS</h2>
         <p className="max-w-2xl mx-auto text-lg mb-10">
           En Decor Eventos somos especialistas en decoración y diseño para eventos, ademas de los mejor antojitos para tu evento formal o casual.
@@ -16,6 +16,12 @@ export default function Home() {
         <button className="bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700">
           Saber más
         </button>
+        </section>
+        <section className='flex flex-col'>
+        <img src="/images/Deco2.jpg" alt="About Us Image" className="max-w-sm h-auto relative -top-10 left-5" />
+        <img src="/images/Deco2.jpg" alt="About Us Image" className="max-w-sm h-auto" />
+        </section>
+
       </section>
 
       <section className="py-20 bg-gray-100 text-center">
