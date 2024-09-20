@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="bg-white py-4 shadow-sm">
+    <header className="bg-white py-4 shadow-sm sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-700">MARLENE</div>
